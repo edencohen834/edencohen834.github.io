@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eden's Tutoring</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#f4f6fb;
+margin:0;
+color:#111;
+}
+
+/* maths background */
+
+.math-bg{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:0;
+overflow:hidden;
+color:rgba(0,0,0,0.045);
+font-size:56px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-around;
+padding:28px;
+}
+
+.math-bg span{
+margin:18px 22px;
+transform:rotate(-10deg);
+}
+
+/* page */
+
+.page{
+position:relative;
+z-index:1;
+}
+
+/* header */
+
+.topbar{
+background:#2c3e50;
+color:white;
+padding:14px 18px;
+}
+
+.nav{
+max-width:980px;
+margin:0 auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+font-weight:bold;
+}
+
+.links a{
+color:white;
+text-decoration:none;
+margin-left:14px;
+font-weight:bold;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
+/* hero */
+
+.hero{
+text-align:center;
+padding:36px 18px;
+}
+
+.hero h1{
+margin:0;
+font-size:38px;
+}
+
+.hero p{
+margin-top:10px;
+color:#333;
+}
+
+.pill{
+margin-top:12px;
+display:inline-block;
+background:#eef2ff;
+padding:8px 12px;
+border-radius:999px;
+font-weight:bold;
+}
+
+/* card */
+
+.section{
+padding:18px;
+}
+
+.card{
+background:white;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,0.10);
+padding:26px;
+max-width:820px;
+margin:auto;
+text-align:center;
+}
+
+.profile{
+width:130px;
+height:130px;
+object-fit:cover;
+border-radius:50%;
+margin:auto;
+display:block;
+margin-bottom:16px;
+box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* credentials */
+
+.credentials{
+margin-top:16px;
+background:#f4f6fb;
+padding:14px;
+border-radius:10px;
+font-weight:600;
+}
+
+/* grid */
+
+.grid{
+display:grid;
+grid-template-columns:1fr;
+gap:14px;
+margin-top:20px;
+text-align:left;
+}
+
+@media (min-width:800px){
+.grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+.box{
+background:white;
+border:1px solid rgba(0,0,0,0.08);
+border-radius:12px;
+padding:16px;
+}
+
+.box h3{
+margin-top:0;
+}
+
+/* buttons */
+
+.actions{
+margin-top:18px;
+text-align:center;
+}
+
+button{
+background:#3498db;
+color:white;
+border:none;
+padding:14px 22px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+width:260px;
+margin:8px;
+}
+
+button:hover{
+background:#2980b9;
+}
+
+.btn-dark button{
+background:#2c3e50;
+}
+
+.btn-dark button:hover{
+background:#1f2d3a;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+color:#666;
+padding:20px;
+font-size:14px;
+}
+
+/* WhatsApp */
+
+.whatsapp-float{
+position:fixed;
+right:18px;
+bottom:18px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 16px rgba(0,0,0,0.25);
+z-index:999;
+}
+
+.whatsapp-float svg{
+width:32px;
+height:32px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="math-bg">
+<span>π</span><span>√x</span><span>Σ</span><span>∫</span>
+<span>x²</span><span>Δ</span><span>θ</span>
+<span>a²+b²=c²</span><span>log(x)</span>
+<span>cos(x)</span><span>sin(x)</span>
+<span>y=mx+b</span><span>f(x)</span>
+<span>3x+2=11</span><span>∞</span>
+</div>
+
+<div class="page">
+
+<div class="topbar">
+<div class="nav">
+<div class="brand">Eden's Tutoring</div>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="book.html">Book</a>
+<a href="reviews.html">Reviews</a>
+</div>
+</div>
+</div>
+
+<div class="hero">
+<h1>Professional Maths Tutoring For Ages 8–17</h1>
+<p>Helping students build confidence and improve grades</p>
+<div class="pill">KS2 • KS3 • GCSE</div>
+</div>
+
+<div class="section">
+
+<div class="card">
+
+<img src="eden.jpg" class="profile">
+
+<h2>Helping students succeed</h2>
+
+<p>
+One-to-one tutoring designed to make maths feel simple and manageable.
+</p>
+
+<div class="credentials">
+⭐ Achieved an <strong>A*</strong> in GCSE Mathematics<br>
+📚 Studied <strong>A-Level Mathematics</strong><br>
+🗣️ Fluent in <strong>Hebrew</strong> and experienced working with <strong>Jewish families</strong>
+</div>
+
+<div class="grid">
+
+<div class="box">
+<h3>How it works</h3>
+<ol>
+<li>Choose a date and time on the booking page</li>
+<li>Tell me the student's age and topic</li>
+<li>Your email app opens — press Send</li>
+</ol>
+</div>
+
+<div class="box">
+<h3>What I help with</h3>
+<ul>
+<li>Building maths confidence</li>
+<li>Exam technique</li>
+<li>Homework help</li>
+<li>Topic catch-up</li>
+</ul>
+</div>
+
+<div class="box">
+<h3>Pricing</h3>
+<ul>
+<li><strong>£40</strong> per hour – Online tutoring</li>
+<li><strong>£50</strong> per hour – In-person tutoring (North West London)</li>
+<li>Reply within 24 hours</li>
+</ul>
+</div>
+
+</div>
+
+<div class="actions">
+<a href="book.html"><button>Book a Lesson</button></a>
+<a href="reviews.html" class="btn-dark"><button>Read Reviews</button></a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© <span id="y"></span> Eden's Tutoring • London
+</footer>
+
+</div>
+
+<a class="whatsapp-float"
+href="https://wa.me/447958128503?text=Hi%20I%27m%20interested%20in%20maths%20tutoring"
+target="_blank">
+
+<svg viewBox="0 0 32 32">
+<path fill="white" d="M16 3C9.4 3 4 8.1 4 14.4c0 2.2.7 4.2 1.9 5.9L4.7 27l7-1.8c1.3.7 2.8 1.1 4.3 1.1 6.6 0 12-5.1 12-11.4C28 8.1 22.6 3 16 3z"/>
+</svg>
+
+</a>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

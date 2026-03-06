@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book - Eden's Tutoring</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f4f6fb;
+margin:0;
+color:#111;
+}
+
+/* maths background */
+.math-bg{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:0;
+overflow:hidden;
+color:rgba(0,0,0,0.045);
+font-size:56px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-around;
+justify-content:space-around;
+padding:28px;
+}
+.math-bg span{
+margin:18px 22px;
+transform:rotate(-10deg);
+user-select:none;
+}
+
+/* page above background */
+.page{
+position:relative;
+z-index:1;
+}
+
+/* top navigation */
+.topbar{
+background:#2c3e50;
+color:white;
+padding:14px 18px;
+}
+.nav{
+max-width:980px;
+margin:0 auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:14px;
+}
+.brand{
+font-weight:bold;
+}
+.links a{
+color:white;
+text-decoration:none;
+margin-left:14px;
+font-weight:bold;
+opacity:0.9;
+}
+.links a:hover{
+opacity:1;
+text-decoration:underline;
+}
+
+/* container */
+.container{
+max-width:820px;
+margin:40px auto;
+padding:0 18px;
+}
+
+/* booking card */
+.card{
+background:white;
+padding:26px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* form */
+label{
+display:block;
+margin-top:14px;
+font-weight:bold;
+}
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:6px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+box-sizing:border-box;
+}
+textarea{ height:120px; }
+
+button{
+margin-top:18px;
+width:100%;
+background:#3498db;
+color:white;
+border:none;
+padding:14px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+button:hover{ background:#2980b9; }
+
+.note{
+font-size:13px;
+color:#555;
+margin-top:10px;
+line-height:1.5;
+}
+
+/* footer */
+footer{
+text-align:center;
+color:#666;
+padding:20px;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- maths background -->
+<div class="math-bg" aria-hidden="true">
+<span>π</span><span>√x</span><span>Σ</span><span>∫</span>
+<span>x²</span><span>Δ</span><span>θ</span>
+<span>a²+b²=c²</span><span>log(x)</span>
+<span>cos(x)</span><span>sin(x)</span>
+<span>y=mx+b</span><span>f(x)</span>
+<span>3x+2=11</span><span>∞</span>
+</div>
+
+<div class="page">
+
+<div class="topbar">
+<div class="nav">
+<div class="brand">Eden's Tutoring</div>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="book.html">Book</a>
+<a href="reviews.html">Reviews</a>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+<h1>Book a Lesson</h1>
+<p>Fill this in and your email app will open with the booking request.</p>
+
+<div class="card">
+
+<form action="mailto:edencohen834@gmail.com" method="post" enctype="text/plain">
+
+<label>Your Name</label>
+<input type="text" name="Name" required>
+
+<label>Your Email</label>
+<input type="email" name="Email" required>
+
+<label>Student Age</label>
+<input type="text" name="Student Age" placeholder="e.g. 12">
+
+<label>Preferred Date</label>
+<input type="date" name="Preferred Date" required>
+
+<label>Preferred Time</label>
+<input type="time" name="Preferred Time" required>
+
+<label>What do they need help with?</label>
+<textarea name="Notes" placeholder="Topics, homework, exam prep, confidence, etc."></textarea>
+
+<button type="submit">Send Booking Request</button>
+
+<div class="note">
+After clicking the button, your email app will open. Please press <b>Send</b> to finish the booking request.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+© <span id="year"></span> Eden's Tutoring
+</footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
